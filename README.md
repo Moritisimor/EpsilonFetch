@@ -31,6 +31,6 @@ go build -ldflags="-s -w" -o EpsilonFetch .
 The ```-ldflags``` are linker flags and serve to make the compiled binary smaller, but you can leave those out if you want to.
 
 ### Execution
-Assuming you are still in the src directory, you enter ```./EpsilonFetch```
+Assuming you are still in the cmd directory, you enter ```./EpsilonFetch```
 
 Otherwise you simply enter the path of the Executable. On UNIXoid Systems you may need to give it permission to run as a program with ```chmod +x```.

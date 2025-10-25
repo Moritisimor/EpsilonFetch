@@ -1,10 +1,10 @@
 package epsilonfetch
 
 import (
-	"github.com/Moritisimor/EpsilonFetch/color"
-	"github.com/Moritisimor/EpsilonFetch/sysinfogatherers/environment"
-	"github.com/Moritisimor/EpsilonFetch/sysinfogatherers/memory"
-	"github.com/Moritisimor/EpsilonFetch/sysinfogatherers/processor"
+	"github.com/Moritisimor/EpsilonFetch/pkg/color"
+	"github.com/Moritisimor/EpsilonFetch/pkg/sysinfogatherers/environment"
+	"github.com/Moritisimor/EpsilonFetch/pkg/sysinfogatherers/memory"
+	"github.com/Moritisimor/EpsilonFetch/pkg/sysinfogatherers/processor"
 )
 
 func EpsilonFetch() {
