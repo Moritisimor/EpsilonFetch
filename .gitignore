@@ -1,0 +1,6 @@
+# IDE-Specific Folders
+.vscode
+.idea
+
+# For Binaries/Artifacts
+bin
