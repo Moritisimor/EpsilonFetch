@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/Moritisimor/EpsilonFetch/src/color"
-	"github.com/Moritisimor/EpsilonFetch/src/sysinfogatherers/environment"
-	"github.com/Moritisimor/EpsilonFetch/src/sysinfogatherers/memory"
-	"github.com/Moritisimor/EpsilonFetch/src/sysinfogatherers/processor"
+	"github.com/Moritisimor/EpsilonFetch/color"
+	"github.com/Moritisimor/EpsilonFetch/sysinfogatherers/environment"
+	"github.com/Moritisimor/EpsilonFetch/sysinfogatherers/memory"
+	"github.com/Moritisimor/EpsilonFetch/sysinfogatherers/processor"
 )
 
 func main() {
