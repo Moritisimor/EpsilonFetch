@@ -6,7 +6,7 @@ Epsilon Fetch is a simple program for displaying System Information on a Console
 
 This Software is licensed under the GPLv3.0 License.
 
-## How to Download / Compile
+## How to Download, Compile and Run
 ### Prerequisites
 Any OS will work, you just need a Go Compiler installed. If you don't have one downloaded already, visit https://go.dev/
 
@@ -26,3 +26,8 @@ And finally, compile it
 go build -ldflags="-s -w" .
 ```
 The ```-ldflags``` are linker flags and serve to make the compiled binary smaller, but you can leave those out if you want to.
+
+### Execution
+Assuming you are still in the src directory, you enter ```./EpsilonFetch```
+
+Otherwise you simply enter the path of the Executable. On UNIXoid Systems you may need to give it permission to run as a program with ```chmod +x```.
