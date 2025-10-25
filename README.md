@@ -19,14 +19,14 @@ First, clone the Repo
 git clone https://github.com/Moritisimor/EpsilonFetch
 ```
 
-Then, Change your Working Directory to where the source code resides
+Then, Change your Working Directory to where the Main Program resides
 ```bash
-cd EpsilonFetch/src
+cd EpsilonFetch/cmd
 ```
 
 And finally, compile it
 ```bash
-go build -ldflags="-s -w" .
+go build -ldflags="-s -w" -o EpsilonFetch .
 ```
 The ```-ldflags``` are linker flags and serve to make the compiled binary smaller, but you can leave those out if you want to.
 

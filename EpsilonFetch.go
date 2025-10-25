@@ -1,4 +1,4 @@
-package main
+package epsilonfetch
 
 import (
 	"github.com/Moritisimor/EpsilonFetch/color"
@@ -7,7 +7,7 @@ import (
 	"github.com/Moritisimor/EpsilonFetch/sysinfogatherers/processor"
 )
 
-func main() {
+func EpsilonFetch() {
 	if environment.GetOS() == "android" {
 		color.PrintRedln("EpsilonFetch does not support Android.")
 		return
@@ -50,3 +50,4 @@ func main() {
 	color.PrintMagentaln(memory.GetFreeSwap())
 	color.PrintRainbowln("[Epsilon Fetch]\n")
 }
+
