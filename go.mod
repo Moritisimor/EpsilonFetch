@@ -1,4 +1,4 @@
-module EpsilonFetch
+module github.com/Moritisimor/EpsilonFetch
 
 go 1.25.3
 
