@@ -19,6 +19,10 @@ func EpsilonFetch() {
 	color.PrintRedln("[Runtime]")
 	color.PrintRed("-> Operating System: ")
 	color.PrintMagentaln(environment.GetOS())
+	color.PrintRed("-> OS Version: ")
+	color.PrintMagentaln(environment.GetDistro())
+	color.PrintRed("-> Kernel Version: ")
+	color.PrintMagentaln(environment.GetKernel())
 	color.PrintRed("-> Hostname: ")
 	color.PrintMagentaln(environment.GetHost())
 	color.PrintRed("-> Current User: ")
@@ -49,6 +53,7 @@ func EpsilonFetch() {
 	color.PrintMagentaln(memory.GetSwapSize())
 	color.PrintBlue("-> Total Swap Available: ")
 	color.PrintMagentaln(memory.GetFreeSwap())
+	
 	color.PrintRainbowln("[Epsilon Fetch]\n")
 }
 
