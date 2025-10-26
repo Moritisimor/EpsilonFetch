@@ -7,6 +7,7 @@ import (
 	"github.com/Moritisimor/EpsilonFetch/pkg/sysinfogatherers/processor"
 )
 
+// EpsilonFetch is the heart function, printing prettily formatted and colored text about the PC's Hard- and Software.
 func EpsilonFetch() {
 	if environment.GetOS() == "android" {
 		color.PrintRedln("EpsilonFetch does not support Android.")

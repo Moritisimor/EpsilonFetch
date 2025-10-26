@@ -1,3 +1,4 @@
+// color package offers some functions for printing colored strings to the console with ANSI Escape Codes
 package color
 
 import "fmt"
