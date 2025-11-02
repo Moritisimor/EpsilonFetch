@@ -2,14 +2,13 @@ package environment
 
 import (
 	"fmt"
-	"log"
 	"github.com/shirou/gopsutil/v4/host"
 )
 
 func GetUptime() string {
 	upTime, err := host.Uptime()
 	if err != nil {
-		log.Fatal(err.Error())
+		return "?? Days, ?? Hours, ?? Minutes"
 	}
 
 	days := upTime / 86400

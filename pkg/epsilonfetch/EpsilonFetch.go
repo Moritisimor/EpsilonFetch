@@ -26,7 +26,7 @@ func EpsilonFetch() {
 	color.PrintRed("-> Hostname: ")
 	color.PrintMagentaln(environment.GetHost())
 	color.PrintRed("-> Current User: ")
-	color.PrintMagentaln(environment.GetUser().Name)
+	color.PrintMagentaln(environment.GetUser())
 	color.PrintRed("-> Uptime: ")
 	color.PrintMagentaln(environment.GetUptime())
 
