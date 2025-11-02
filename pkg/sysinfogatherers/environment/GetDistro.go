@@ -24,15 +24,19 @@ func GetDistro() string {
 		buf := ""
 		scanner := bufio.NewScanner(file)
 		for scanner.Scan() {
-			if strings.HasPrefix(scanner.Text(), "NAME") {
+			if strings.HasPrefix(scanner.Text(), "NAME=") {
 				buf += strings.TrimSuffix(strings.TrimPrefix(scanner.Text(), "NAME=\""), "\"") + " "
 			}
 
-			if strings.HasPrefix(scanner.Text(), "VERSION") && !strings.HasPrefix(scanner.Text(), "VERSION_ID") {
+			if strings.HasPrefix(scanner.Text(), "VERSION=") {
 				buf += strings.TrimSuffix(strings.TrimPrefix(scanner.Text(), "VERSION=\""), "\"")
 			}
 		}
 
+		if strings.TrimSpace(buf) == "" {
+			return "???"
+		}
+		
 		return buf
 	}
 
