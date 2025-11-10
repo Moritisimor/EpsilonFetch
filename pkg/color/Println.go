@@ -10,6 +10,14 @@ func PrintBlueln(printee string) {
 	fmt.Println("\033[34m" + printee + "\033[0m")
 }
 
+func PrintCyanln(printee string) {
+	fmt.Println("\033[36m" + printee + "\033[0m")
+}
+
+func PrintBlackln(printee string) {
+	fmt.Println("\033[30m" + printee + "\033[0m")
+}
+
 func PrintGreenln(printee string) {
 	fmt.Println("\033[32m" + printee + "\033[0m")
 }

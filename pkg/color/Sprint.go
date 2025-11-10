@@ -8,6 +8,14 @@ func SprintBlue(printee string) string {
 	return "\033[34m" + printee + "\033[0m"
 }
 
+func SprintCyan(printee string) string {
+	return "\033[36m" + printee + "\033[0m"
+}
+
+func SprintBlack(printee string) string {
+	return "\033[30m" + printee + "\033[0m"
+}
+
 func SprintGreen(printee string) string {
 	return "\033[32m" + printee + "\033[0m"
 }

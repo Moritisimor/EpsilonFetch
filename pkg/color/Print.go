@@ -13,6 +13,14 @@ func PrintBlue(printee string) {
 	fmt.Print("\033[34m" + printee + "\033[0m")
 }
 
+func PrintCyan(printee string) {
+	fmt.Print("\033[36m" + printee + "\033[0m")
+}
+
+func PrintBlack(printee string) {
+	fmt.Print("\033[30m" + printee + "\033[0m")
+}
+
 func PrintGreen(printee string) {
 	fmt.Print("\033[32m" + printee + "\033[0m")
 }
