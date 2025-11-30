@@ -2,7 +2,7 @@
 A minimalist and cross-platform Fetch Program for displaying Hard- and Software Info written in Go
 
 ## Version
-Current Version: v0.4.0
+Current Version: v1.0.0
 
 ## About
 Epsilon Fetch is a simple program for displaying System Information on a Console. It is designed to work on all common Operating Systems. 
@@ -33,4 +33,4 @@ The ```-ldflags``` are linker flags and serve to make the compiled binary smalle
 ### Execution
 Assuming you are still in the cmd directory, you enter ```./epsilonfetch```
 
-Otherwise you simply enter the path of the Executable. On UNIXoid Systems you may need to give it permission to run as a program with ```chmod +x```.
+Otherwise you simply enter the path of the Executable. On UNIXoid Systems you may need to give it permission to run as a program with ```chmod +x epsilonfetch```.

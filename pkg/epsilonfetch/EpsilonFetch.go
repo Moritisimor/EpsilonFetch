@@ -19,7 +19,12 @@ func EpsilonFetch() {
 	color.PrintRedln("[Runtime]")
 	color.PrintRed("-> Operating System: ")
 	color.PrintMagentaln(environment.GetOS())
-	color.PrintRed("-> OS Version: ")
+	if environment.GetOS() == "linux" {
+		color.PrintRed("-> Distribution: ")
+	} else {
+		color.PrintRed("-> OS Version: ")
+	}
+
 	color.PrintMagentaln(environment.GetDistro())
 	color.PrintRed("-> Kernel Version: ")
 	color.PrintMagentaln(environment.GetKernel())
