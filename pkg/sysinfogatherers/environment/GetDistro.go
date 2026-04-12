@@ -8,8 +8,17 @@ import (
 	"github.com/shirou/gopsutil/v4/host"
 )
 
+func getRegularOSName() string {
+	_, os, version, err := host.PlatformInformation() 
+	if err != nil {
+		return "???"
+	}
+	
+	return fmt.Sprintf("%s %s", os, version)
+}
+
 func GetDistro() string {
-	if GetOS() == "linux" || strings.HasSuffix(strings.ToLower(GetOS()), "bsd") {
+	if GetOS() == "linux" || GetOS() == "freebsd" {
 		var file *os.File
 		var err error
 
@@ -17,7 +26,7 @@ func GetDistro() string {
 		if err != nil {
 			file, err = os.Open("/usr/lib/os-release")
 			if err != nil {
-				return "???"
+				return getRegularOSName()
 			}
 		}
 		
@@ -39,11 +48,6 @@ func GetDistro() string {
 		
 		return buf
 	}
-
-	_, os, version, err := host.PlatformInformation() 
-	if err != nil {
-		return "???"
-	}
 	
-	return fmt.Sprintf("%s %s", os, version)
+	return getRegularOSName()
 }
