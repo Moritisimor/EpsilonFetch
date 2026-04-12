@@ -42,11 +42,9 @@ func GetDistro() string {
 			}
 		}
 
-		if strings.TrimSpace(buf) == "" {
-			return "???"
+		if strings.TrimSpace(buf) != "" {
+			return buf
 		}
-		
-		return buf
 	}
 	
 	return getRegularOSName()
