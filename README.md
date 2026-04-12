@@ -2,7 +2,7 @@
 A minimalist and cross-platform Fetch Program for displaying Hard- and Software Info written in Go
 
 ## Version
-Current Version: v1.0.0
+Current Version: v1.1.0
 
 ## About
 Epsilon Fetch is a simple program for displaying System Information on a Console. It is designed to work on all common Operating Systems. 
