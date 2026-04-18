@@ -34,3 +34,8 @@ The ```-ldflags``` are linker flags and serve to make the compiled binary smalle
 Assuming you are still in the cmd directory, you enter ```./epsilonfetch```
 
 Otherwise you simply enter the path of the Executable. On UNIXoid Systems you may need to give it permission to run as a program with ```chmod +x epsilonfetch```.
+
+### Screenshots
+EpsilonFetch on Arch Linux
+
+![EpsilonFetch Screenshot](screenshots/EpsilonFetchScreenshot.png)
